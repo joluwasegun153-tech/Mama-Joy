@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy Pap & Groundnut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#080f1c] text-white font-sans antialiased">
+
+    <header class="border-t border-[#30291A] bg-amber-900 px-6 py-5 bg-glass sticky top-0 z-50 backdrop-blur-md rounded-xl border border-[#30291A] shadow-lg shadow-black/20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-8">
+
+                 <a href="index.html" class="flex shrink-0 items-center gap-3">
+
+            <!-- Circular Logo -->
+            <div class="flex h-12 w-12 items-center justify-center
+                        rounded-full border border-yellow-600
+                        text-sm font-bold text-yellow-500 gap-3">
+                🥣P&G
+            </div>
+            <!-- Brand Text -->
+            <div>
+                <h1 class="text-xl font-bold uppercase tracking-[0.25em] text-white">
+                 Mercy Pap & 
+                </h1>
+
+                <p class="mt-1 text-[10px] uppercase
+                          tracking-[0.3em] text-yellow-600">
+                   Groundnut
+                </p>
+            </div>
+
+           <nav
+             class="flex items-center gap-7 text-xs
+                       tracking-wider text-gray-300 hidden md:flex gap-6">
+                    <a href="index.html"
+                       class="text-yellow-500 hover:text-white">
+                        Home
+                    </a>
+                    <a href="about.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        About Us
+                    </a>
+                    <a href="products.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        Products
+                    </a>
+                    <a href="shop.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        Shop
+                    </a>
+                    <a href="gallery.html"
+                       class="text-yellow-500 
+                                hover:bg-yellow-600 hover:text-black">
+                        Gallery 
+                    </a>
+                    <a href="contact.html"
+                       class="text-yellow-500 
+                                hover:bg-yellow-600 hover:text-black">
+                        Contact Us
+                    </a>
+
+<!-- Shopping Cart -->
+<a href="#products" class="relative flex items-center gap-2 text-white hover:text-yellow-400 transition">
+
+    <span class="text-2xl">🛒</span>
+
+    <span>Cart</span>
+
+    <span id="cart-count"
+        class="bg-yellow-400 text-black text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+        0
+    </span>
+
+</a>
+
+        </nav>
+              <!-- Reserve Table Button -->
+               <button onclick="reserveTable()" class="shrink-0 rounded-full bg-[#D4AF37]
+                  px-6 py-3 text-xs font-medium
+                  uppercase text-black transition
+                  hover:bg-[#E7C75A]">
+            Order Now
+        </button>
+<button id="menu-btn" class="text-3xl md:hidden">
+        ☰
+    </button>
+        </div>
+    </header>
+        
+<nav id="mobile-menu" class="hidden bg-gray-900 text-white p-5 md:hidden">
+
+    <a href="index.html" class="block py-3">Home</a>
+    <a href="about.html" class="block py-3">About</a>
+    <a href="products.html" class="block py-3">Products</a>
+     <a href="shop.html" class="block py-3">Shop</a>
+ <a href="gallery.html" class="block py-3">Gallery</a>
+ <a href="contact.html" class="block py-3">Contact</a>
+
+
+</nav>
+
+<section class="bg-[#fffaf0] py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+
+            <span class="bg-yellow-400 text-gray-900
+            px-5 py-2 rounded-full font-bold">
+                Our Products
+            </span>
+
+            <h1 class="text-3xl md:text-5xl font-bold
+            text-[#172438] mt-6">
+                Our Fresh and Delicious Products
+            </h1>
+
+            <p class="text-gray-600 mt-5 max-w-2xl mx-auto">
+                Discover our collection of carefully prepared
+                pap and crunchy groundnuts for your everyday enjoyment.
+            </p>
+
+        </div>
+
+        <!-- Product Cards will go here -->
+
+    </div>
+    <!-- Product Category Buttons -->
+<div class="flex flex-wrap justify-center gap-4 mt-8 mb-10">
+
+    <button class="bg-yellow-400 text-black px-7 py-3 rounded-full font-bold hover:bg-yellow-500 transition">
+        🌾 All Products
+    </button>
+
+    <button class="bg-[#151c2b] text-white px-7 py-3 rounded-full border border-gray-700 hover:bg-yellow-400 hover:text-black transition">
+        🥣 Pap
+    </button>
+
+    <button class="bg-[#151c2b] text-white px-7 py-3 rounded-full border border-gray-700 hover:bg-yellow-400 hover:text-black transition">
+        🥜 Groundnut
+    </button>
+
+    <button class="bg-[#151c2b] text-white px-7 py-3 rounded-full border border-gray-700 hover:bg-yellow-400 hover:text-black transition">
+        🎁 Combos
+    </button>
+
+</div>
+
+<!-- Products Section -->
+<section class="bg-[#080f1c] py-12 px-20">
+
+    <div class="">
+
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Fresh White Pap Card -->
+            <div class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+
+                <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=600&q=80"
+                alt="Fresh white pap"
+                class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <span class="bg-yellow-400 text-black text-xs px-3 py-1 rounded-full font-bold">
+                        BEST SELLER
+                    </span>
+
+                    <h3 class="text-white text-xl font-bold mt-4">
+                        Fresh White Pap
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2 leading-6">
+                        Smooth, fresh and delicious white pap, perfect for your everyday breakfast.
+                    </p>
+
+                    <p class="text-gray-300 text-sm mt-4">
+                        Package: 500g, 1kg, 2kg
+                    </p>
+
+                    <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+                        ₦2,000
+                    </h4>
+
+                    <div class="flex gap-2 mt-5">
+
+                        <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                            View Details
+                        </button>
+
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Fresh Yellow Pap Card -->
+            <div class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80"
+                alt="Fresh yellow pap"
+                class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <span class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-bold">
+                        NEW ARRIVAL
+                    </span>
+
+                    <h3 class="text-white text-xl font-bold mt-4">
+                        Fresh Yellow Pap
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2 leading-6">
+                        Traditional yellow pap with a smooth texture and delicious taste.
+                    </p>
+
+                    <p class="text-gray-300 text-sm mt-4">
+                        Package: 500g, 1kg, 2kg
+                    </p>
+
+                    <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+                        ₦2,500
+                    </h4>
+
+                    <div class="flex gap-2 mt-5">
+
+                        <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                            View Details
+                        </button>
+
+                        
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Roasted Groundnut Card -->
+            <div class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+
+                <img src="https://images.unsplash.com/photo-1567892737950-30c4db37cd89?auto=format&fit=crop&w=600&q=80"
+                alt="Roasted groundnut"
+                class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <span class="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">
+                        POPULAR
+                    </span>
+
+                    <h3 class="text-white text-xl font-bold mt-4">
+                        Roasted Groundnut
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2 leading-6">
+                        Crunchy and delicious roasted groundnuts, perfect for snacking.
+                    </p>
+
+                    <p class="text-gray-300 text-sm mt-4">
+                        Package: Small, Medium, Large
+                    </p>
+
+                    <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+                        ₦1,500
+                    </h4>
+
+                    <div class="flex gap-2 mt-5">
+
+                        <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                            View Details
+                        </button>
+
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Raw Groundnut Card -->
+            <div class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+
+                <img src="https://images.unsplash.com/photo-1608797178974-15b35a64ede9?auto=format&fit=crop&w=600&q=80"
+                alt="Raw groundnut"
+                class="w-full h-52 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-white text-xl font-bold">
+                        Raw Groundnut
+                    </h3>
+
+                    <p class="text-gray-400 text-sm mt-2 leading-6">
+                        Clean and carefully selected groundnuts for cooking and snacking.
+                    </p>
+
+                    <p class="text-gray-300 text-sm mt-4">
+                        Package: 500g, 1kg, 2kg
+                    </p>
+
+                    <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+                        ₦2,000
+                    </h4>
+
+                    <div class="flex gap-2 mt-5">
+
+                        <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                            View Details
+                        </button>
+
+                        
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+<!-- Brown Pap Card -->
+<div class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+    <img
+        src="images/brown-pap.jpg"
+        alt="Brown Pap"
+        class="w-full h-52 object-cover"
+    >
+    <div class="p-5">
+        <span class="bg-yellow-400 text-black text-xs px-3 py-1 rounded-full font-bold">
+            TRADITIONAL
+        </span>
+        <h3 class="text-white text-xl font-bold mt-4">
+            Brown Pap
+        </h3>
+        <p class="text-gray-400 text-sm mt-2 leading-6">
+            Enjoy our traditionally prepared brown pap, made from carefully selected grains with a smooth texture and delicious taste.
+        </p>
+        <p class="text-gray-300 text-sm mt-4">
+            Package: 500g, 1kg, 2kg
+        </p>
+
+        <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+            ₦10,500
+        </h4>
+
+        <div class="flex gap-2 mt-5">
+
+            <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                View Details
+            </button>
+
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Groundnut Paste Card -->
+<div class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+
+    <img
+        src="images/groundnut-paste.jpg"
+        alt="Fresh Groundnut Paste"
+        class="w-full h-52 object-cover"
+    >
+
+    <div class="p-5">
+
+        <span class="bg-yellow-400 text-black text-xs px-3 py-1 rounded-full font-bold">
+            NATURAL
+        </span>
+
+        <h3 class="text-white text-xl font-bold mt-4">
+            Groundnut Paste
+        </h3>
+
+        <p class="text-gray-400 text-sm mt-2 leading-6">
+            Enjoy our smooth and delicious groundnut paste, made from carefully selected groundnuts. Perfect for soups, sauces and other meals.
+        </p>
+
+        <p class="text-gray-300 text-sm mt-4">
+            Package: 250g, 500g, 1kg
+        </p>
+
+        <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+            ₦3,000
+        </h4>
+
+        <div class="flex gap-2 mt-5">
+
+            <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                View Details
+            </button>
+
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Packaged Groundnut Card -->
+<div linh href="photo/garri.jpeg" class="bg-[#151c2b] rounded-2xl overflow-hidden border border-gray-700 hover:border-yellow-400 transition duration-300 hover:-translate-y-2">
+
+    <img
+        src="photo/garri.jpeg"
+        alt="Packaged Groundnut"
+        class="w-full h-52 object-cover"
+    >
+
+    <div class="p-5">
+
+        <span class="bg-yellow-400 text-black text-xs px-3 py-1 rounded-full font-bold">
+            BEST SELLER
+        </span>
+
+        <h3 class="text-white text-xl font-bold mt-4">
+            Packaged Groundnut
+        </h3>
+
+        <p class="text-gray-400 text-sm mt-2 leading-6">
+            Enjoy our carefully selected and well-packaged groundnuts. A delicious snack for home, school, work and family gatherings.
+        </p>
+
+        <p class="text-gray-300 text-sm mt-4">
+            Package: 250g, 500g, 1kg
+        </p>
+
+        <h4 class="text-yellow-400 text-2xl font-bold mt-3">
+            ₦2,000
+        </h4>
+
+        <div class="flex gap-2 mt-5">
+
+            <button class="border border-yellow-400 text-white px-3 py-2 rounded-full text-sm hover:bg-yellow-400 hover:text-black transition">
+                View Details
+            </button>
+
+            
+<button
+    onclick="addToCart()"
+    class="bg-yellow-400 text-black px-3 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition">
+    Add to Cart
+</button>
+
+        </div>
+
+    </div>
+</div>
+
+     
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- How It Works Section -->
+<section class="bg-[#151c2b] py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-12">
+            <span class="text-yellow-400 font-bold uppercase tracking-widest">
+                Simple Process
+            </span>
+
+            <h2 class="text-white text-3xl md:text-4xl font-bold mt-3">
+                How It Works
+            </h2>
+
+            <p class="text-gray-400 mt-4">
+                Getting your favourite products is simple.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="text-center p-8 border border-gray-700 rounded-2xl">
+                <div class="bg-yellow-400 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                    01
+                </div>
+                <h3 class="text-white text-xl font-bold mt-5">
+                    Choose Your Product
+                </h3>
+                <p class="text-gray-400 mt-3 leading-6">
+                    Browse our products and select the pap or groundnut you want.
+                </p>
+            </div>
+
+            <div class="text-center p-8 border border-gray-700 rounded-2xl">
+                <div class="bg-yellow-400 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                    02
+                </div>
+                <h3 class="text-white text-xl font-bold mt-5">
+                    Place Your Order
+                </h3>
+                <p class="text-gray-400 mt-3 leading-6">
+                    Contact us with your preferred products and package sizes.
+                </p>
+            </div>
+
+            <div class="text-center p-8 border border-gray-700 rounded-2xl">
+                <div class="bg-yellow-400 text-black w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                    03
+                </div>
+                <h3 class="text-white text-xl font-bold mt-5">
+                    Receive Your Order
+                </h3>
+                <p class="text-gray-400 mt-3 leading-6">
+                    Arrange delivery or collection and enjoy your products.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Newsletter Section -->
+<section class="bg-[#151c2b] py-20 px-6">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+        <span class="text-yellow-400 font-bold uppercase tracking-widest">
+            Stay Connected
+        </span>
+
+        <h2 class="text-white text-3xl md:text-4xl font-bold mt-3">
+            Join Our Newsletter
+        </h2>
+
+        <p class="text-gray-400 mt-4 leading-7">
+            Subscribe to receive updates about our latest products,
+            special offers and business news.
+        </p>
+
+        <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-2xl mx-auto">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+                class="flex-1 px-5 py-4 rounded-full bg-[#101827] border border-gray-700 text-white outline-none focus:border-yellow-400"
+            >
+
+            <button
+                type="submit"
+                class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-full hover:bg-yellow-500 transition">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-[#080e19] pt-16 pb-6 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+
+            <!-- Business Information -->
+            <div>
+                <h2 class="text-yellow-400 text-2xl font-bold">
+                    Pap & Groundnut
+                </h2>
+
+                <p class="text-gray-400 mt-4 leading-7">
+                    Bringing quality pap and delicious groundnut
+                    products closer to your home.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="#products" class="hover:text-yellow-400">Products</a></li>
+                    <li><a href="#about" class="hover:text-yellow-400">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-5">
+                    Our Products
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+                    <li>Fresh White Pap</li>
+                    <li>Fresh Yellow Pap</li>
+                    <li>Roasted Groundnut</li>
+                    <li>Groundnut Paste</li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-5">
+                    Contact Us
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+                    <li>📍 Your Business Location</li>
+                    <li>📞 Your Phone Number</li>
+                    <li>✉️ Your Business Email</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 pt-6 text-center">
+            <p class="text-gray-500 text-sm">
+                © 2026 Pap & Groundnut. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>
+ <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", function() {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+
+    let cartCount = 0;
+
+    function addToCart() {
+        cartCount++;
+
+        document.getElementById("cart-count").textContent = cartCount;
+
+        alert("Product added to cart!");
+    }
+    function reserveTable() {
+       alert('Thank you for ordering from us! Please contact us to confirm your order.')
+    }
+
+    </script>
+   
+    

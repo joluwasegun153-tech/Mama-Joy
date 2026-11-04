@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy Pap & Groundnut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="border-t border-[#30291A] bg-amber-900 px-6 py-5 bg-glass sticky top-0 z-50 backdrop-blur-md rounded-xl border border-[#30291A] shadow-lg shadow-black/20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-8">
+
+                 <a href="index.html" class="flex shrink-0 items-center gap-3">
+
+            <!-- Circular Logo -->
+            <div class="flex h-12 w-12 items-center justify-center
+                        rounded-full border border-yellow-600
+                        text-sm font-bold text-yellow-500 gap-3">
+                🥣P&G
+            </div>
+            <!-- Brand Text -->
+            <div>
+                <h1 class="text-xl font-bold uppercase tracking-[0.25em] text-white">
+                 Mercy Pap & 
+                </h1>
+
+                <p class="mt-1 text-[10px] uppercase
+                          tracking-[0.3em] text-yellow-600">
+                   Groundnut
+                </p>
+            </div>
+
+           <nav
+             class="flex items-center gap-7 text-xs
+                       tracking-wider text-gray-300 hidden md:flex gap-6">
+                    <a href="index.html"
+                       class="text-yellow-500 hover:text-white">
+                        Home
+                    </a>
+                    <a href="about.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        About Us
+                    </a>
+                    <a href="products.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        Products
+                    </a>
+                    <a href="shop.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        Shop
+                    </a>
+                    <a href="gallery.html"
+                       class="text-yellow-500 
+                                hover:bg-yellow-600 hover:text-black">
+                        Gallery 
+                    </a>
+                    <a href="contact.html"
+                       class="text-yellow-500 
+                                hover:bg-yellow-600 hover:text-black">
+                        Contact Us
+                    </a>
+        </nav>
+              <!-- Reserve Table Button -->
+               <button onclick="reserveTable()" class="shrink-0 rounded-full bg-[#D4AF37]
+                  px-6 py-3 text-xs font-medium
+                  uppercase text-black transition
+                  hover:bg-[#E7C75A]">
+            Order Now
+        </button>
+<button id="menu-btn" class="text-3xl md:hidden">
+        ☰
+    </button>
+        </div>
+    </header>
+        
+<nav id="mobile-menu" class="hidden bg-gray-900 text-white p-5 md:hidden">
+
+    <a href="index.html" class="block py-3">Home</a>
+    <a href="about.html" class="block py-3">About</a>
+    <a href="products.html" class="block py-3">Products</a>
+     <a href="shop.html" class="block py-3">Shop</a>
+ <a href="gallery.html" class="block py-3">Gallery</a>
+ <a href="contact.html" class="block py-3">Contact</a>
+
+</nav>
+
+    <section class="px-6 py-20 border border-slate-900 bg-[#FFF1D8]">
+   
+            
+    <!-- ABOUT HERO -->
+     
+
+        <div link href="/photo/3633dabe.png" class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+
+            <div>
+                <img src="/photo/3633dabe.png"
+                     alt="Pap and groundnut"
+                     class="w-full h-[350px] object-cover rounded-r-[100px]">
+            </div>
+
+            <div class="px-8 py-12 text-center">
+
+                <p class="text-amber-800 font-bold tracking-widest mb-4 rounded-xl bg-yellow-500 px-4 py-2 inline-block">
+                   About US
+                </p>
+
+                <h1 class="text-7xl md:text-5xl font-bold text-blue-950 mb-6">
+                    More Than Just<br> <span class="text-amber-500 text-4xl">Pap and Groundnuts</span> 
+                </h1>
+
+                <p class="text-gray-700 leading-7 mb-5">
+                    Welcome to our world of delicious pap and crunchy groundnuts! We are passionate about bringing you fresh, tasty, and quality products that make every breakfast special. Our products are carefully prepared and packaged to give you a wonderful experience with every bite.
+                </p>
+
+                <p class="text-gray-700 leading-7 mb-7">
+                    Our goal is to make your everyday meals and
+                    snacks more enjoyable with products prepared
+                    and packaged with care.
+                </p>
+
+                <a href="products.html"
+                   class="inline-block bg-amber-950 text-white px-7 py-3 rounded-full hover:bg-amber-700 transition">
+                    Explore Our Products →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Hero Section -->
+<section class="bg-orange-50 px-8 py-20">
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+
+        <!-- Image -->
+        <div class="w-full md:w-1/2">
+
+            <img
+                src="/photo/pap-about.jpg"
+                alt="Pap and groundnut"
+                class="w-full h-[450px] object-cover rounded-3xl shadow-xl"
+            >
+
+        </div>
+
+        <!-- Text -->
+        <div class="w-full md:w-1/2">
+
+            <p class="text-amber-700 font-bold tracking-widest mb-4">
+                GET TO KNOW US
+            </p>
+
+            <h1 class="text-5xl font-bold text-amber-950 leading-tight mb-6">
+                About Pap & Groundnut
+            </h1>
+
+            <p class="text-gray-600 leading-8 mb-5">
+                Welcome to Pap & Groundnut, where traditional
+                Nigerian flavours meet quality and care.
+                We are passionate about bringing delicious pap
+                and crunchy groundnuts closer to your home.
+            </p>
+
+            <p class="text-gray-600 leading-8 mb-7">
+                Our goal is to make your everyday meals and
+                snacks more enjoyable with products prepared
+                and packaged with care.
+            </p>
+
+            <a href="products.html"
+               class="inline-block bg-amber-950 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition">
+                Explore Our Products
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<section>
+
+<section class="bg-orange-100 px-10 py-20 border border-slate-900">
+
+    <div  link href="/photo/garri.jpeg" class="max-w-7xl mx-auto flex items-center gap-12  ">
+
+        <!-- Image on the left -->
+        <div class="w-1/2">
+            <img src="/photo/garri.jpeg"
+                 alt="Pap and groundnut"
+                 class="w-full h-[450px] object-cover rounded-3xl">
+        </div>
+
+        <!-- Text on the right -->
+        <div class="w-1/2">
+
+            <p class="text-white font-bold mb-4 rounded-xl bg-orange-900 px-4 py-2 w-fit">
+               Our Story
+            </p>
+
+            <h1 class="text-5xl font-bold text-amber-900 leading-tight">
+             The Story Behind ,
+                <span class="text-amber-900"> Our Brand</span>
+            </h1>
+
+            <p class="text-gray-600 mt-6 leading-8">
+               Our journey started with a simple passion for providing delicious and nutritious traditional Nigerian breakfast foods. We believe that pap and groundnuts are more than just food; they are part of our culture and everyday life. Today, we are committed to sharing that delicious experience with every customer.
+            </p>
+
+        <button onclick="ourStory()" 
+         class="bg-amber-900 text-white px-16 py-2 rounded-xl mt-6 hover:bg-slate-900">
+             Discover More 
+            </button>
+
+        </div>
+</section>
+<!-- Our Mission Section -->
+<section class="bg-[#fff7e8] py-16 px-6">
+
+    <div class="max-w-7xl mx-auto bg-[#ffedc9]
+    rounded-3xl p-10 grid md:grid-cols-2
+    gap-10 items-center">
+
+        <!-- Mission Text -->
+        <div>
+
+            <span class="bg-yellow-400 text-gray-900
+            px-5 py-2 rounded-full font-bold">
+                Our Mission
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold
+            text-[#172438] mt-6 mb-5">
+                Our Mission and Purpose
+            </h2>
+
+            <p class="text-gray-700 leading-8 text-lg">
+                Our mission is to provide fresh, affordable,
+                hygienic, and high-quality pap and groundnuts
+                that bring satisfaction to every home.
+
+                We aim to make traditional breakfast enjoyable,
+                convenient, and accessible to everyone.
+            </p>
+
+        </div>
+
+        <!-- Mission Image -->
+        <div>
+            <img
+                src="your-mission-image.jpg"
+                alt="Fresh pap and groundnuts"
+                class="w-full h-72 object-cover rounded-2xl shadow-lg"
+            >
+        </div>
+
+    </div>
+
+</section>
+<!-- Why Choose Us Section -->
+<section class="bg-[#fffaf0] py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+
+            <span class="bg-yellow-400 text-gray-900
+            px-5 py-2 rounded-full font-bold">
+                Why Choose Us
+            </span>
+
+            <h2 class="text-3xl md:text-5xl font-bold
+            text-[#172438] mt-6">
+                Why Customers Love Us
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                We are committed to giving you the best
+                experience with our pap and groundnuts.
+            </p>
+
+        </div>
+
+
+        <!-- Cards Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2
+        lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md
+            border border-orange-100 hover:-translate-y-2
+            transition duration-300">
+
+                <div class="text-4xl mb-5">🌾</div>
+
+                <h3 class="text-xl font-bold text-[#172438] mb-3">
+                    Fresh Products
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    We care about delivering fresh products
+                    that you can enjoy with your family.
+                </p>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md
+            border border-orange-100 hover:-translate-y-2
+            transition duration-300">
+
+                <div class="text-4xl mb-5">⭐</div>
+
+                <h3 class="text-xl font-bold text-[#172438] mb-3">
+                    Quality Ingredients
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    We pay attention to the quality of
+                    ingredients used in our products.
+                </p>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md
+            border border-orange-100 hover:-translate-y-2
+            transition duration-300">
+
+                <div class="text-4xl mb-5">😋</div>
+
+                <h3 class="text-xl font-bold text-[#172438] mb-3">
+                    Great Taste
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    Enjoy the delicious taste of traditional
+                    pap and crunchy groundnuts.
+                </p>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md
+            border border-orange-100 hover:-translate-y-2
+            transition duration-300">
+
+                <div class="text-4xl mb-5">💰</div>
+
+                <h3 class="text-xl font-bold text-[#172438] mb-3">
+                    Affordable Prices
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    We offer quality products at prices
+                    that are friendly to your budget.
+                </p>
+
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md
+            border border-orange-100 hover:-translate-y-2
+            transition duration-300">
+
+                <div class="text-4xl mb-5">❤️</div>
+
+                <h3 class="text-xl font-bold text-[#172438] mb-3">
+                    Customer Satisfaction
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    Your happiness and satisfaction
+                    are important to us.
+                </p>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="bg-[#172438] p-8 rounded-2xl
+            shadow-md hover:-translate-y-2
+            transition duration-300">
+
+                <div class="text-4xl mb-5">🤝</div>
+
+                <h3 class="text-xl font-bold text-white mb-3">
+                    Trust and Care
+                </h3>
+
+                <p class="text-gray-300 leading-7">
+                    We value every customer and strive
+                    to provide a pleasant experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Our Promise -->
+<section class="bg-[#172438] py-20 px-6">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+        <span class="text-yellow-400 font-bold uppercase tracking-widest">
+            Our Promise
+        </span>
+
+        <h2 class="text-3xl md:text-5xl font-bold text-white mt-5 mb-6">
+            Good Food, Happy Moments
+        </h2>
+
+        <p class="text-gray-300 leading-8 max-w-2xl mx-auto mb-8">
+            We are committed to bringing you delicious, fresh,
+            and quality pap and groundnuts. Your satisfaction
+            inspires us to keep improving and serving you better
+            every day.
+        </p>
+
+        <a href="menu.html"
+        class="inline-block bg-yellow-400 text-gray-900
+        px-9 py-3 rounded-full font-bold
+        hover:bg-orange-500 hover:text-white transition">
+
+            Shop Now →
+
+        </a>
+
+    </div>
+
+</section>
+<!-- Footer -->
+<footer class="bg-[#101b2b] text-white py-14 px-6">
+
+    <div class="max-w-7xl mx-auto grid
+    grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+            <h2 class="text-2xl font-bold text-yellow-400 mb-4">
+                Pap & Groundnut
+            </h2>
+
+            <p class="text-gray-400 leading-7">
+                Bringing you fresh, delicious and quality
+                pap and groundnuts for your everyday enjoyment.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-xl font-bold mb-5">Quick Links</h3>
+
+            <ul class="space-y-3 text-gray-400">
+                <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+                <li><a href="menu.html" class="hover:text-yellow-400">Our Products</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+            <h3 class="text-xl font-bold mb-5">Contact Us</h3>
+
+            <p class="text-gray-400 mb-3">📞 Your phone number</p>
+            <p class="text-gray-400 mb-3">📧 Your email address</p>
+            <p class="text-gray-400">📍 Your business location</p>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+            <h3 class="text-xl font-bold mb-5">Follow Us</h3>
+
+            <div class="flex gap-4 text-gray-400">
+                <a href="#" class="hover:text-yellow-400">Facebook</a>
+                <a href="#" class="hover:text-yellow-400">Instagram</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+
+        <p class="text-gray-400 text-sm">
+            © 2026 Pap & Groundnut. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+
+    function ourStory() {
+        alert("Our journey began with a passion for bringing the delicious taste of traditional Nigerian breakfast to every home. We understand that pap and groundnuts are more than just everyday foods; they are part of our culture, traditions, and special family moments.Inspired by the love for these traditional foods, we decided to create a brand that makes enjoying pap and groundnuts easier, more convenient, and enjoyable for everyone.");
+    }
+    
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", function() {
+        mobileMenu.classList.toggle("hidden");
+    });
+    function reserveTable() {
+       alert('Thank you for ordering from us! Please contact us to confirm your order.')
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pap & Groundnut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <header class="border-t border-[#30291A] bg-amber-900 px-6 py-5 bg-glass sticky top-0 z-50 backdrop-blur-md rounded-xl border border-[#30291A] shadow-lg shadow-black/20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-8">
+
+                 <a href="index.html" class="flex shrink-0 items-center gap-3">
+
+            <!-- Circular Logo -->
+            <div class="flex h-12 w-12 items-center justify-center
+                        rounded-full border border-yellow-600
+                        text-sm font-bold text-yellow-500 gap-3">
+                🥣P&G
+            </div>
+            <!-- Brand Text -->
+            <div>
+                <h1 class="text-xl font-bold uppercase tracking-[0.25em] text-white">
+                 Mercy Pap & 
+                </h1>
+
+                <p class="mt-1 text-[10px] uppercase
+                          tracking-[0.3em] text-yellow-600">
+                   Groundnut
+                </p>
+            </div>
+
+           <nav
+             class="flex items-center gap-7 text-xs
+                       tracking-wider text-gray-300 hidden md:flex gap-6">
+                    <a href="index.html"
+                       class="text-yellow-500 hover:text-white">
+                        Home
+                    </a>
+                    <a href="about.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        About Us
+                    </a>
+                    <a href="products.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        Products
+                    </a>
+                    <a href="shop.html"
+                       class="text-gray-300 hover:text-yellow-500">
+                        Shop
+                    </a>
+                    <a href="gallery.html"
+                       class="text-yellow-500 
+                                hover:bg-yellow-600 hover:text-black">
+                        Gallery 
+                    </a>
+                    <a href="contact.html"
+                       class="text-yellow-500 
+                                hover:bg-yellow-600 hover:text-black">
+                        Contact Us
+                    </a>
+        </nav>
+              <!-- Reserve Table Button -->
+               <button onclick="reserveTable()" class="shrink-0 rounded-full bg-[#D4AF37]
+                  px-6 py-3 text-xs font-medium
+                  uppercase text-black transition
+                  hover:bg-[#E7C75A]">
+            Order Now
+        </button>
+<button id="menu-btn" class="text-3xl md:hidden">
+        ☰
+    </button>
+        </div>
+    </header>
+        
+<nav id="mobile-menu" class="hidden bg-gray-900 text-white p-5 md:hidden">
+
+    <a href="index.html" class="block py-3">Home</a>
+    <a href="about.html" class="block py-3">About</a>
+    <a href="products.html" class="block py-3">Products</a>
+     <a href="shop.html" class="block py-3">Shop</a>
+ <a href="gallery.html" class="block py-3">Gallery</a>
+ <a href="contact.html" class="block py-3">Contact</a>
+
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="bg-[#080d18] py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <p class="text-yellow-400 font-semibold tracking-widest">
+                GET IN TOUCH
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                Contact Us
+            </h2>
+
+            <p class="text-gray-400 mt-4">
+                Have a question or want to place an order?
+                Send us a message.
+            </p>
+        </div>
+
+
+        <!-- FORM AND CONTACT DETAILS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- CONTACT FORM -->
+            <div class="bg-[#151c2b] p-8 rounded-2xl border border-gray-700">
+
+                <h3 class="text-2xl font-bold mb-6">
+                    Send Us a Message
+                </h3>
+
+                <form>
+
+                    <!-- Name -->
+                    <div class="mb-5">
+                        <label class="block mb-2 text-gray-300">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your full name"
+                            required
+                            class="w-full p-3 rounded-lg bg-[#080d18] border border-gray-700 outline-none focus:border-yellow-400 text-white">
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="mb-5">
+                        <label class="block mb-2 text-gray-300">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                            class="w-full p-3 rounded-lg bg-[#080d18] border border-gray-700 outline-none focus:border-yellow-400 text-white">
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="mb-5">
+                        <label class="block mb-2 text-gray-300">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="Enter your phone number"
+                            class="w-full p-3 rounded-lg bg-[#080d18] border border-gray-700 outline-none focus:border-yellow-400 text-white">
+                    </div>
+
+
+                    <!-- Subject -->
+                    <div class="mb-5">
+                        <label class="block mb-2 text-gray-300">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="What is your message about?"
+                            required
+                            class="w-full p-3 rounded-lg bg-[#080d18] border border-gray-700 outline-none focus:border-yellow-400 text-white">
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="mb-6">
+                        <label class="block mb-2 text-gray-300">
+                            Your Message
+                        </label>
+
+                        <textarea
+                            rows="5"
+                            placeholder="Write your message here..."
+                            required
+                            class="w-full p-3 rounded-lg bg-[#080d18] border border-gray-700 outline-none focus:border-yellow-400 text-white"></textarea>
+                    </div>
+
+
+                    <!-- Button -->
+                    <button
+                        type="button"
+                        onclick="alert('Thank you for contacting us!')"
+                        class="w-full bg-yellow-400 text-black font-bold py-3 rounded-lg hover:bg-white transition duration-300">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+            <div class="flex flex-col justify-center">
+
+                <h3 class="text-3xl font-bold mb-5">
+                    Let's Talk About Your Order
+                </h3>
+
+                <p class="text-gray-400 leading-7 mb-8">
+                    We are happy to hear from you. Contact us for
+                    product enquiries, orders, delivery information
+                    and other questions.
+                </p>
+
+                <div class="space-y-6">
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-yellow-400 text-black p-4 rounded-xl">
+                            📞
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold">Phone Number</h4>
+                            <p class="text-gray-400">Your phone number</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-yellow-400 text-black p-4 rounded-xl">
+                            ✉️
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold">Email Address</h4>
+                            <p class="text-gray-400">your-email@example.com</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-4">
+                        <div class="bg-yellow-400 text-black p-4 rounded-xl">
+                            📍
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold">Our Location</h4>
+                            <p class="text-gray-400">Your business location</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
+
+<script>
+    function reserveTable() {
+       alert('Thank you for ordering from us! Please contact us to confirm your order.')
+    }
+</script>
